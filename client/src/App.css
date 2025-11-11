@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --MainBgLight: #f0f8ff;
+  --MainTextLight: #0A0A0A;
+  --SecBgLight: #F0F0F0;
+  --SecTextLight: #555555;
+  --HTextLight: #2723fc;
+
+  --DarkBg: #0A0A0A;
+  --DarkText: #F8FFFF;
+  --SecDarkBg: #1C1C1C;
+  --SecDarkText: #CCCCCC;
+  --HDarkText: #1f15de;
+}
+
+body.light {
+  --MainBg: var(--MainBgLight);
+  --MainText: var(--MainTextLight);
+  --SecBg: var(--SecBgLight);
+  --SecText: var(--MainTextLight);
+  --HText: var(--HTextLight);
+}
+
+body.dark {
+  --MainBg: var(--DarkBg);
+  --MainText: var(--DarkText);
+  --SecBg: var(--SecDarkBg);
+  --SecText: var(--SecDarkText);
+  --HText: var(--HDarkText);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: .1rem;
+}
+
+body {
+  background: var(--MainBg);
+  color: var(--MainText);
+  min-height: 100vh;
+  transition: all ease-in-out .5s;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+li {
+  list-style: none;
+
+}
+
+li>a:hover {
+  color: var(--HText);
+  transform: scale(1.25);
+  transition: all ease-out .25s;
+}
+
+button {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+span {
+  color: var(--HText);
+}
