@@ -90,3 +90,7 @@ button {
 span {
   color: var(--HText);
 }
+
+.nobar::-webkit-scrollbar {
+  display: none;
+}
