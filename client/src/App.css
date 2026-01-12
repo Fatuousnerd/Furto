@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,15 +6,15 @@
 
 :root {
   --MainBgLight: #f0f8ff;
-  --MainTextLight: #0A0A0A;
-  --SecBgLight: #F0F0F0;
+  --MainTextLight: #0a0a0a;
+  --SecBgLight: #f0f0f0;
   --SecTextLight: #555555;
   --HTextLight: #2723fc;
 
-  --DarkBg: #0A0A0A;
-  --DarkText: #F8FFFF;
-  --SecDarkBg: #1C1C1C;
-  --SecDarkText: #CCCCCC;
+  --DarkBg: #0a0a0a;
+  --DarkText: #f8ffff;
+  --SecDarkBg: #1c1c1c;
+  --SecDarkText: #cccccc;
   --HDarkText: #1f15de;
 }
 
@@ -46,15 +46,14 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 body {
   background: var(--MainBg);
   color: var(--MainText);
   min-height: 100vh;
-  transition: all ease-in-out .5s;
-
+  transition: all ease-in-out 0.5s;
 }
 
 body::-webkit-scrollbar {
@@ -73,13 +72,12 @@ section {
 
 li {
   list-style: none;
-
 }
 
-li>a:hover {
+li > a:hover {
   color: var(--HText);
   transform: scale(1.25);
-  transition: all ease-out .25s;
+  transition: all ease-out 0.25s;
 }
 
 button {
